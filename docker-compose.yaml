@@ -12,3 +12,11 @@ services:
     container_name: catalogue
     depends_on:
     - mongodb
+
+  web:
+    image: web:1
+    container_name: web
+    ports:
+      - "80:80"
+    depends_on:
+      - catalogue
