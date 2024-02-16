@@ -35,3 +35,6 @@ services:
     depends_on:
       - redis
       - catalogue
+  redis:
+    image: redis
+    container_name: redis
